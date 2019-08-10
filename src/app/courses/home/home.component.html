@@ -1,0 +1,35 @@
+
+<div class="courses-panel">
+
+    <h2 class="title">Top Trending Technologies</h2>
+
+    <div class="counters">
+        <p> Most Popular : {{promoTotal$ | async}}</p>
+    </div>
+
+    <mat-tab-group>
+
+        <mat-tab label="Beginners">
+
+            <technologies-card-list
+                    [technologies]="beginnerCourses$ | async">
+
+            </technologies-card-list>
+
+        </mat-tab>
+
+        <mat-tab label="Advanced">
+
+            <technologies-card-list
+                    [technologies]="advancedCourses$ | async"
+
+            ></technologies-card-list>
+
+        </mat-tab>
+
+    </mat-tab-group>
+
+
+
+</div>
+

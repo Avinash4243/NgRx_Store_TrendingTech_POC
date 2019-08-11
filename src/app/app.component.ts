@@ -16,7 +16,7 @@ import { isLoggedIn, isLoggedOut } from './auth/auth.selectors';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-
+    adminName: string = 'Avinash';
     isLoggedIn$: Observable<boolean>;
     isLoggedOut$: Observable<boolean>;
 
